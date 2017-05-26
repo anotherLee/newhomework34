@@ -31,10 +31,11 @@
 
 /* begin of body */
 #body{
-
+    border:1px solid red;
     margin-top:10px;
     width:100%;
     position:relative;
+    /*display:none;*/
 
 
 }
@@ -61,21 +62,23 @@
     box-shadow:0 0 1px #4A382D;
 }
 #body > .line:nth-child(3){
-    position:relative;
+    position:absolute;
     left:64px;
-    bottom:11px;
+    top:44px;
+    display:none;
 
 }
 #body > .line:nth-child(4){
-    position:relative;
+    position:absolute;
     left:250px;
-    bottom:16px;
+    top:44px;
 }
 #body > form{
     color:white;
     /*border:1px solid green;*/
     width:100%;
     margin-top:30px;
+    display:none;
 }
 #body > form > div{
     margin-top:10px;
@@ -134,7 +137,95 @@
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+
+
+
+
+
+
+/* begin of signUp */
+
+
+#body > form:nth-of-type(2){
+    color:white;
+    /*border:1px solid green;*/
+    width:100%;
+    margin-top:30px;
+    display:block;
+
+}
+#body > .signUp > div{
+    margin-top:10px;
+}
+#body > .signUp i{
+    color:#F6B955;
+    font-size:30px;
+    margin-left:50px;
+}
+#body #icon2{
+    font-size:40px;
+}
+
+#body > .signUp  input{
+    width:150px;
+    height:25px;
+    border:none;
+    margin-left:60px;
+    background:#191919;
+    font-size: 20px;
+    color:white;
+
+
+}
+#body #input2{
+    margin-left:65px;
+}
+#body > .signUp input::-webkit-input-placeholder{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:20px;
+    color:#cccccc;
+    text-transform: capitalize;
+}
+#body > .signUp input:focus{
+    outline:none;
+}
+#body > .signUp > .long{
+    border: 1px solid #606060;
+}
+#body > .signUp > #remember{
+
+    font-size:20px;
+    margin-top:20px;
+    padding-left:48px;
+
+}
+#body > .signUp > input{
+    display:block;
+    width:280px;
+    height:50px;
+    border-radius:25px;
+    color:white;
+    border:1px solid #D67455;
+    margin:50px auto 0;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of body*/
+
 #main > #footer > p{
+    display:none;
     font-size:20px;
     /*font-family: 'PT Sans Narrow', sans-serif;*/
     color:white;
