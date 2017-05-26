@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+    <script src="jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -41,11 +42,53 @@
 
             </form>
 
+
+            <!--这是sign up的具体内容-->
+
+            <form action="#" class="signUp">
+                <div>
+                    <i class="fa fa-envelope" aria-hidden="true"></i><input type="text" name="username" placeholder="username">
+                </div>
+                <div class="long"></div>
+                <div>
+                    <i id='icon2' class="fa fa-unlock-alt" aria-hidden="true"></i><input id='input2' type="password" name="password"placeholder="password">
+                </div>
+                <div class="long"></div>
+                <div>
+                    <i id='icon2' class="fa fa-unlock-alt" aria-hidden="true"></i><input id='input2' type="password" name="password"placeholder="password again">
+                </div>
+                <div class="long"></div>
+
+                <input type="submit" value="sign up">
+
+            </form>
+
+
+
         </section>
 
         <section id="footer">
             <p>forgot your password?</p>
         </section>
+
     </div>
+
+    <script>
+        $('#sign').children().first().on('click',function(){
+            console.log($('#sign').first())
+            $('form').first().css('display','block').end().last().css('display','none')
+        })
+        $('#sign').children().last().on('click',function(){
+
+            $('form').last().css('display','block').end().first().css('display','none')
+        })
+    </script>
+
+
+
+
+
+
+
 </body>
 </html>
